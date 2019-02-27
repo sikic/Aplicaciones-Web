@@ -1,0 +1,93 @@
+/* Reglas CSS para versión en pantalla */
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+body{
+    background: rgb(37, 37, 37);
+}
+
+.fondo{
+    background-image: url("../img/fondo_logo.png");
+    background-repeat: repeat;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+
+}
+.frase{
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 100 px;
+    font-style: italic;
+    width: 25%;
+   
+}
+.letras{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: white;
+ 
+}
+.lul{
+    margin: 0px;
+    display: flex;  
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(12, 83, 12);
+}
+span{
+    font-family: 'Open Sans';
+    padding: 5px;
+}
+.lis{
+    
+    background: linear-gradient(black,green);
+    margin:5 px;
+    padding: 10px  20px 10px 20px;
+    border: solid black;
+    
+}
+.lis:hover{
+    background: rgb(151, 231, 1);
+}
+.denis{
+    border-left: none;
+}
+
+a{
+    font-family: 'Open Sans';
+    color: white;
+    text-decoration: none;
+}
+.java{
+    font-family: 'Open Sans';
+    width: 70%;
+    padding: 10px 10px;
+    margin: 5px;
+    border: 2px solid black;
+    background-image: url(../img/fondo_articulo.png);
+}
+.verde{
+    color: green;
+    font-family: 'Open Sans'
+}
+
+.caracteristicas{
+    font-family: 'Open Sans';
+    width: 25%;
+    margin: 5px;
+    padding: 10px 10px;
+    border: 2px solid black;
+    background-image: url(../img/fondo_articulo.png);
+}
+#contenedor{
+    
+    display: flex;
+    align-items: flex-start;
+}
+
