@@ -8,7 +8,8 @@ display: none;
     top: 220px;
     left: 0px;
     border: solid  black 2px;
-    border-radius: 5%;
+    padding-left: 5px;
+    border-radius: 25px;
     padding-right: 50% ;
 }
 .java{
@@ -16,4 +17,7 @@ display: none;
      top: 400px;
      left: 0px;
  
+}
+.frase{
+    display: none;
 }
