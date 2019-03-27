@@ -1,1 +1,19 @@
 /* Reglas CSS para versión de impresión */
+nav{
+display: none;
+}
+.caracteristicas{
+   position: absolute;
+   float:left;
+    top: 220px;
+    left: 0px;
+    border: solid  black 2px;
+    border-radius: 5%;
+    padding-right: 50% ;
+}
+.java{
+    position: absolute;
+     top: 400px;
+     left: 0px;
+ 
+}
