@@ -5,14 +5,17 @@
     padding:1%;
     padding-bottom: 7%;
     background-color: darkgray; 
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 2fr 1fr 2fr;
 }
 .uno{
     
     width: 25%;
     border: solid black 1px;
     margin-top: 0,5%;
-    background-color: white; 
-    
+    background-color: white;
+    padding-right: 70%;
     
 }
 ul{
@@ -25,3 +28,13 @@ ul{
 li{
     align-items: flex-start;
 }
+a{
+color:white;
+text-decoration: none;
+background-color: blueviolet;
+}
+
+.dos{
+    display: inline-block;
+}
+
