@@ -1,0 +1,27 @@
+.contenedor{
+    width: 70%;
+    margin-left:15%;
+    margin-right: 15%;
+    padding:1%;
+    padding-bottom: 7%;
+    background-color: darkgray; 
+}
+.uno{
+    
+    width: 25%;
+    border: solid black 1px;
+    margin-top: 0,5%;
+    background-color: white; 
+    
+    
+}
+ul{
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    list-style: none;
+    color: green;
+}
+li{
+    align-items: flex-start;
+}
