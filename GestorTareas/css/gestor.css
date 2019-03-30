@@ -1,0 +1,90 @@
+header{
+    display: flex;
+    justify-content:space-between;
+    background: green;
+}
+
+.user{
+    background-image: url(../img/NoPerfil.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 80px;
+    border: solid black 2px;
+}
+.contenedor2>div{
+    display: flex;
+    align-items: center;
+}
+.contenedor{
+    
+}
+.contenedor2{
+    display: flex;
+    justify-content: flex-end;
+}
+.tags{
+    color: white;
+    background-color: rgb(190, 175, 33);
+    padding: 3px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.marcado{
+    float: right;
+    background-image: url(../img/tick.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    color: white;
+    background-color:rgb(160,82,45);
+    border-radius: 5px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.desconectar{
+    color: black;
+    font-weight: bold;
+    padding: 2px;
+    background-color: rgb(192, 164, 6);
+    border:solid black 2px;
+    font-size: 17px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.tareas{
+    width: 50%;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid rgb(171, 182, 16) 2px;
+    background-color: rgba(210, 230, 97, 0.678);
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.texto{
+    background-color: rgb(65, 170, 240);
+}
+.azul{
+    float: right;
+    color: white;
+    border:solid black 2px;
+    background-color: rgb(21, 122, 63);
+    padding: 4px;
+    margin: 0px;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+    padding: 8px;
+}
+.centro{
+    width: 20%;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
