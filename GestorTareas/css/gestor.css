@@ -15,9 +15,7 @@ header{
     display: flex;
     align-items: center;
 }
-.contenedor{
-    
-}
+
 .contenedor2{
     display: flex;
     justify-content: flex-end;
@@ -37,7 +35,9 @@ header{
     color: white;
     background-color:rgb(160,82,45);
     border-radius: 5px;
-    padding-left: 20px;
+    padding-left: 25px;
+    border:solid black 2px;
+
     text-decoration: none;
 }
 .desconectar{
@@ -50,8 +50,14 @@ header{
     border-radius: 10px;
     text-decoration: none;
 }
+.desconectar:hover{
+    background-color: rgb(71, 6, 192);
+}
+.marcado:hover{
+    background-color: rgb(71, 6, 192);
+}
 .tareas{
-    width: 50%;
+    width: 700px;
     margin-top: 5px;
     margin-right: auto;
     margin-left: auto;
@@ -83,7 +89,7 @@ header{
     padding: 8px;
 }
 .centro{
-    width: 20%;
+    width: 300px;
     margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
