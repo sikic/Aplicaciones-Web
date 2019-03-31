@@ -13,7 +13,6 @@ function producto(x,y){
                
              return y;
            }
-
         }
         else if((typeof(x) == "object" && typeof(y)=="object") && x.length == y.length){
             let total = 0;
