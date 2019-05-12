@@ -26,12 +26,16 @@ function producto(x,y){
 }
 
 function sequence(a,x){
-    console.log(a[0]);
-    console.log(a[1]);
-    console.log(a[2]);
+    if(undefined in a)
+        console.log("Algo esta dando undifined en el array");
+        else{
+            for (let index = 0; index < a.length; index++) {
+                console.log(a[index](x));
+            }
+        }
 }
 
-let array = [f1,f2,f3];
+let luis = [f1,f2,f3];
 
 function f1(x){
     return x+1;
@@ -44,3 +48,5 @@ function f2(x){
 function f3(x){
     return x - 1;
 }
+function f4(x){}
+return b;
