@@ -23,4 +23,24 @@ function producto(x,y){
         }else
             throw new Error("ninguna es correcta");
               
-    }
+}
+
+function sequence(a,x){
+    console.log(a[0]);
+    console.log(a[1]);
+    console.log(a[2]);
+}
+
+let array = [f1,f2,f3];
+
+function f1(x){
+    return x+1;
+}
+
+function f2(x){
+    return x*2;
+}
+
+function f3(x){
+    return x - 1;
+}
