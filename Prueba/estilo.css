@@ -1,0 +1,22 @@
+
+body{ 
+    
+    background: linear-gradient(to bottom,white,gray);
+    background-repeat: no-repeat;
+    
+    /*background: black;*/
+}
+
+.fondo{
+    width: 70%;
+    margin-left:15%;
+    margin-right: 15%;
+    padding:1%;
+    padding-bottom: auto;
+}
+#negro{
+    background: black;
+}
+.blanco{
+    color: white
+}
