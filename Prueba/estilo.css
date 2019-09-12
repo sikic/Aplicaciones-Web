@@ -1,22 +1,47 @@
-
+*{
+    border: 1px solid lime;
+   font-family: sans-serif;
+   margin:0;
+}
 body{ 
     
-    background: linear-gradient(to bottom,white,gray);
+    background: linear-gradient(to bottom,white, black);
+    padding-bottom: 250px;
     background-repeat: no-repeat;
-    
-    /*background: black;*/
 }
 
+.letragrande{
+    margin-left: 20px;
+    font-size: 29px;
+}
+.gris{
+    color:rgb(170, 169, 169);
+}
 .fondo{
-    width: 70%;
-    margin-left:15%;
-    margin-right: 15%;
+    border: 2px solid black;
     padding:1%;
     padding-bottom: auto;
+}
+.espacio{
+    margin-top: 20px;
+}
+
+.espacioarriba{
+    margin-bottom: 30px;
+}
+.espacioizda{
+    margin-left: 30px;
 }
 #negro{
     background: black;
 }
 .blanco{
     color: white
+}
+h1{
+    margin-left:35%;
+    margin-right:35%;
+}
+.amarillo{
+    color:rgb(143, 107, 10);
 }

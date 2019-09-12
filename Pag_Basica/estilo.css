@@ -1,0 +1,16 @@
+*{
+    border:1px solid lime;
+}
+td,th{
+    border: 2px solid black;
+}
+span{
+    font-weight: bold;
+}
+
+.rojo{
+    color:red;
+}
+.resaltado{
+    background: lightgray;
+}
