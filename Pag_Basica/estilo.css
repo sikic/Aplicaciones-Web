@@ -1,16 +1,96 @@
-*{
+/**{
     border:1px solid lime;
+}*/
+
+*{
+    font-family: sans-serif;
 }
+
 td,th{
     border: 2px solid black;
+    padding:5px;
 }
 span{
     font-weight: bold;
 }
-
+body{
+    background-image: url(naruto.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.estirar{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 .rojo{
     color:red;
 }
+.bordes{
+    margin-top:20px ;
+    margin-bottom: 20px;
+}
+.gris{
+    background:gray;
+}
+.rojogris{
+    color:gray;
+    background: rgb(110, 17, 17);
+    padding:20px;
+}
+
+.negroblanco{
+    color:gray;
+    background: black;
+    text-decoration: none;
+    padding:10px;
+}
+
 .resaltado{
     background: lightgray;
+}
+#tc{
+    font-style: italic;
+}
+
+img[src$="png"]{
+    background: black;
+}
+
+.dorado{
+    background: rgb(85, 85, 8);
+}
+
+.amarilloclaro{
+    background: rgb(207, 207, 7);
+}
+
+.morado{
+    background: purple;
+}
+
+.moradoclaro{
+    background: rgb(172, 35, 172);
+}
+
+.verde{
+    background: green;
+}
+
+.verdeclaro{
+    background: rgb(16, 219, 16);
+}
+
+.negroblanco:hover{
+    background:blue;
+}
+.negroblanco:active{
+    background: red;
+}   
+
+table.pares tr:nth-child(even){
+    background: rgb(228, 6, 24);     
+}
+
+table.pares tr:nth-child(odd){
+    background: rgb(234, 235, 247);
 }

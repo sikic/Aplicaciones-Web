@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap');
+
+*{
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+    font-family: 'Patrick Hand', cursive;
+}
+body{
+    background-image: url(../img/fondo.jpg);
+}
+header{
+    background: rgb(80, 24, 24);
+    display: flex; 
+    position: fixed; 
+    left: 0;
+    top:0; 
+    width: 100%;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    content: url(../img/uchiha.png);
+    width: 5%;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.logo:hover{
+    width: 7%;  
+}
+
+
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25em;
+    padding: 0.2em; 
+    margin-left: 0.5em;
+    
+}
+
+h1{
+    font-weight: bold;
+}
+li{
+    list-style: none;
+}
+
+.centro{
+    width: 30%;
+    margin-top: 11.5%;
+    margin-left: 35% ;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.fotoPerfil{
+    width: 7%;
+    height: 5%;
+    border: 2px solid black;
+    margin-left: 10%; 
+}
+.usuario span{
+    font-size: 1.7em;
+    width: 50%;
+}
+
+
+div[id^="usuario"]  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+    background-color: rgb(25, 25, 26) !important;
+    border: 2px solid white;
+}
+
+a:hover{
+    background-color: greenyellow !important;
+    padding: 0.5em;
+}
+.busqueda {
+    margin-top:1.5%;
+}
+
+.amigos{
+    margin-top:1.5%;
+}
+
+.barra{
+    margin-left: 10%;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.barra input{
+    width:70%;
+    height: 2em;
+    border-radius: 15px;
+    margin-left: 1%;
+}
+.barra a{
+    font-size: 1em;
+}
+.lista_amigos div{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 1.7em;
+  margin-left: 2%;
+}
+.lista_amigos span{
+    width: 30%;
+    margin-left: 2%;
+}
+
+
+

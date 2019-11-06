@@ -1,0 +1,47 @@
+
+body{
+    background: linear-gradient(to bottom,rgb(220, 220, 243),black);
+    padding-bottom: 10000px;
+}
+
+div{
+    background-color: aquamarine;
+    margin: 3%;
+    padding: 2px;
+}
+
+.flotante_izda{
+    float: left;
+}
+.flotante_der{
+    float: right;
+}
+
+.limpiar{
+    clear: both;;
+}
+
+h2{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cuarto{
+    width: 25%;
+}
+img{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.absoluto{
+    position: fixed;
+    left: 500px;
+    top: 100px;
+}

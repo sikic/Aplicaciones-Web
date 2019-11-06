@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap');
+*{
+    /* border: 1px solid red;   */
+    margin: 0;
+    padding: 0;
+    font-family: 'Patrick Hand', cursive;
+
+}
+header{
+    background: rgb(80, 24, 24);
+    display: flex; 
+    position: fixed; 
+    left: 0;
+    top:0; 
+    width: 100%;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5em;
+   
+}
+
+body{
+    background-image: url(../img/fondo.jpg);
+}
+.logo{
+    content: url(../img/uchiha.png);
+    width: 5%;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.logo:hover{
+    width: 7%;  
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 2em;
+}
+
+li{
+    list-style: none;
+}
+
+
+a:hover{
+    background-color: greenyellow !important;
+    padding: 0.5em;
+}
+.log{
+    background-color:  rgb(80, 24, 24);
+    color: white;
+    width: 30%;
+    height: 50%;
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 35% ;
+    margin-right: auto;
+    justify-content: center;
+    border: 3px solid black;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 3% 0%;
+}
+.mail{
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace; 
+    color: white;
+    flex-wrap: wrap;
+}
+
+label{
+    display: inline-block;
+    width: 20%;
+    padding-left: 0.45em;
+}
+input{
+    width: 70%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.password{
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace; 
+    color: white;
+    flex-wrap: wrap;
+}
+
+.ok{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#entrar{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    background: gray;
+    padding-left: 1em;
+    border: 2px dashed black;
+    margin-bottom: 1.5%; 
+    font-size: 0.75em;
+    margin-top: 14.5%;
+    flex-wrap: wrap;
+    margin-right:auto;
+    margin-left: auto;
+
+}
+a{
+    color: white;
+    background-color: rgb(25, 25, 26) !important;
+    border: 2px solid white;
+    padding: 0.2em; 
+    margin-left: 0.5em;
+    margin-top: 0.5em ;
+    text-decoration: none;
+}
+
+.conectar a{
+    font-size: 2em;
+}

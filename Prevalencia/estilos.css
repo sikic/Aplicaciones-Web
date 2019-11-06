@@ -1,0 +1,11 @@
+div.articulo{
+    margin-left: 20px;
+    margin-top: 10px;
+    padding:  10px 20px;
+    border-radius: 10px;
+    background: rgb(180, 173, 173);
+}
+
+div.articulo h2{
+    color:#902020
+}

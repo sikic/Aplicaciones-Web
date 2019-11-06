@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap');
+
+*{
+    /* border: 1px solid red;    */
+    margin: 0;
+    padding: 0;
+    font-family: 'Patrick Hand', cursive;
+}
+body{
+    background-image: url(../img/fondo.jpg);
+}
+header{
+    background: rgb(80, 24, 24);
+    display: flex; 
+    position: fixed; 
+    left: 0;
+    top:0; 
+    width: 100%;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5%;
+}
+.logo{
+    content: url(../img/uchiha.png);
+    width: 5%;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.logo:hover{
+    width: 7%;  
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25em;
+}
+
+li{
+    list-style: none;
+}
+
+li:hover(){
+background: red;
+}
+
+.centro{
+     
+    width: 30%;
+    margin-top: 12.5%;
+    margin-left: 35% ;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.tuperfil{
+    display: flex;
+    justify-content: center;
+    background: gray;
+    padding-left: 1em;
+    border: 2px dashed black;
+    margin-bottom: 6%; 
+    font-size: 0.75em; 
+}
+.datos{
+    display: flex;
+}
+
+.datos img{
+    width: 50%;
+    border: 2px solid black;
+}
+
+a{
+    background-color: rgb(25, 25, 26) !important;
+    border: 2px solid white;
+    padding: 0.2em; 
+    margin-left: 0.5em;
+}
+.Boton{
+    display: flex;
+    justify-content: center;
+}
+a:hover{
+    background-color: greenyellow !important;
+    padding: 0.5em;
+}
+.usuario{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.modificar{
+    margin-top: 1em;
+}

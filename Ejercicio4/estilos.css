@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    /*border: 1px solid red;*/
+   font-family: 'Roboto', sans-serif;
+}
+
+.principal{
+
+    margin: 5%;
+    display: flex;
+}
+
+.contenedorizda{
+
+    width: 250px;
+    background: gray;
+    display: flex;
+    justify-content: space-between; 
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+li{
+    list-style: none;
+}
+.contenedorderecha{
+
+    width: 500px;
+    background-image: linear-gradient(
+        rgba(12, 98, 148, 0.3), 
+        rgba(12, 98, 148, 0.3)),
+   url(bla.png); 
+    
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+.foto{
+    width: 100px;
+    display: flex;
+    margin-right: 5px;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+h4:hover{
+    color: red;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+.foto img{
+    size: 60%;
+   /* display: block;
+    margin-left: auto;
+    margin-right: auto;*/
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+    flex-wrap: nowrap;
+}
+.estado{
+    width: 150px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border-bottom: 2px solid rgba(99, 91, 91, 0.863);
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    margin:10px;
+  
+}
+.bla{
+    width: 100%;
+    background-color: rgb(15, 115, 209);
+}
