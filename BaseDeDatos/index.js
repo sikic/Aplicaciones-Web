@@ -4,12 +4,13 @@ const daoMensajeria = new dao("localhost", "root", "", "mensajeria");
 
 // Creación de usuarios
 let usuario1 = { 
+    id:2,
     nombre: "luis",
     correo: "lurofdfs@ucm.es",
     telefono: 3652325
 };
-let usuario2 = {
 
+let usuario2 = {
     nombre: "fran",
     correo: "lfradafs@ucm.es",
     telefono: 365234525
@@ -23,6 +24,7 @@ function cb_insertarUsuario(err){
     else {
         console.log("USUARIO INSERTADO CORRECTAMENTE");
     }
+    daoMensajeria.terminarConexion(cb_insertarUsuario);
 };
 
 function cb_enviamensaje(err){
@@ -32,6 +34,7 @@ function cb_enviamensaje(err){
     else {
         console.log("MENSAJE INSERTADO CORRECTAMENTE");
     }
+    daoMensajeria.terminarConexion(cb_cerrar);
 };
 
 function cb_bandejaEntrada(err, mensajes){
@@ -45,6 +48,7 @@ function cb_bandejaEntrada(err, mensajes){
             
         }
     }
+    daoMensajeria.terminarConexion(cb_cerrar);
 };
 
 function cb_buscarUsuarios(err, usuarios){
@@ -58,9 +62,15 @@ function cb_buscarUsuarios(err, usuarios){
             
         }
     }
+    daoMensajeria.terminarConexion(cb_cerrar);
 };
 
-daoMensajeria.insertaUsuario(usuario1,cb_insertarUsuario);
-daoMensajeria.insertaUsuario(usuario2,cb_insertarUsuario);
-daoMensajeria.enviarMensaje(usuario1,usuario2,"vaya caos",cb_enviamensaje);
-daoMensajeria.hola();
+function cb_cerrar(err){
+    if(err)
+        console.log("LA CONEXION NO SE HA PODIDO CERRAR");
+    else
+        console.log("LA CONEXION SE HA CERRADO CORRECTAMENTE");
+    
+}
+daoMensajeria.buscarUsuario("u",cb_buscarUsuarios);
+daoMensajeria.bandejaEntrada(usuario1,cb_bandejaEntrada);

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+* {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Permanent Marker', cursive;
+    text-transform: uppercase;
+}
+
+header {
+    background: rgb(153, 146, 146);
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    flex-direction: row;
+}
+
+img[alt="tareas"] {
+    width: 80%;
+    margin: 5%;
+}
+
+img[alt="interrogacion"] {
+    width: 70px;
+    margin-top: 10%;
+    margin-left: 70%;
+    width: 25%;
+}
+
+.logo {
+    content: url(../img/LOGO.png);
+    width: 25%;
+    height: 30%;
+}
+
+.foto {
+    padding: 3%;
+    content: url(../img/NoPerfil.png);
+    width: 15%;
+}
+
+.letras {
+    width: 20%;
+    margin: 5%;
+    margin-top: 8%;
+}
+
+.letras>a {
+    color: black;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.conexion {
+    width: 40%;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: row;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+main {
+    margin-top: 12.5%;
+    width: 60%;
+    margin-right: 20%;
+    margin-left: auto;
+}
+
+.tarea {
+    margin-bottom: 3%;
+    padding-bottom: 1.5%;
+    padding-top: 0.7%;
+    padding-left: 2%;
+    background-color: rgb(20, 152, 156);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1.2px solid brown;
+    display: flex;
+    justify-content: space-between;
+    color: blanchedalmond;
+}
+
+.terminada {
+    background-color: rgb(20, 152, 156, 0.3);
+    text-decoration: line-through;
+    color: rgb(9, 16, 82);
+    padding-left: 5%;
+}
+
+li {
+    list-style: none;
+}
+
+.tags {
+    background-color: rgb(2, 48, 48);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0.8%;
+    height: 2em;
+}
+
+.marcar {
+    background-color: rgba(172, 65, 65, 0.979);
+    border: 1px solid brown;
+    height: 2em;
+    padding: 0.1%
+}
+
+main a {
+    color: white;
+    text-decoration: none;
+}
+
+.formulario {
+    margin-bottom: 3%;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    padding-left: 2%;
+    background-color: rgb(4, 12, 53);
+}
+
+.añadir {
+    border: 1px solid rgb(16, 20, 3);
+    background-color: rgb(3, 109, 109);
+    padding: 1%;
+}
+
+.texto {
+    width: 100%;
+}
+
+.ok {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    margin-right: 1em;
+}
+
+.ok>input {
+    background-color: grey;
+    width: 100%;
+}
+
+.ok>input:hover {
+    background-color: yellow;
+}
+
+input[name="nombre"] {
+    width: 90%;
+    height: 40px;
+}
+
+.eliminar {
+    width: 60%;
+    padding: 2%;
+    padding-top: 0.2%;
+    padding-bottom: 0.5%;
+    margin-left: 20%;
+    margin-right: auto;
+    font-size: 1.5em;
+}
+
+.eliminar>a {
+    margin-left: 10%;
+    border: 1px solid white;
+    margin-right: auto;
+    padding: 2%;
+    background-color: rgb(66, 66, 66);
+}
+
+.letraytarea {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.etiquetas {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+span {
+    display: none;
+}
+
+.titulo {
+    display: none;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}

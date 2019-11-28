@@ -1,0 +1,14 @@
+{
+  "name": "parte3",
+  "version": "1.0.0",
+  "description": "Practica guiada 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "luis y fran",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.17.1"
+  }
+}

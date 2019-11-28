@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="../public/css/usuarios.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th id = "nombre">Nombre</th>
+            <th id = "numero">Numero</th>
+        </tr>
+
+        <% nombre.forEach(function(nombr){ %>
+            <tr>
+                <th> <%= nombr.n %> </th>
+                <th> <%= nombr.numero %> </th>
+            </tr>
+
+        <% }); %>
+
+    </table>
+</body>
+
+</html>

@@ -16,12 +16,13 @@ class dao{
     }
 
     insertaUsuario(usuario,callback){
-        pool.getConnection(function(err, connection) {
+        this.pool.getConnection(function(err, connection) {
             if (err) {
                 callback(err);
             } else {
-                connection.query(`INSERT INTO usuarios(nombre, correo, telefono)
-                VALUES(?,?,?)`,[usuario.nombre],[usuario.correo],[usuario.telefono],function (err,resultado){
+                connection.query("INSERT INTO usuarios(nombre, correo, telefono) VALUES(?,?,?)",
+                [usuario.nombre,usuario.correo,usuario.telefono],
+                function (err,resultado){
                     connection.release();
                     if(err)
                         callback(err);
@@ -34,12 +35,12 @@ class dao{
     }
 
     enviarMensaje(usuarioOrigen, usuarioDestino, mensaje, callback){
-        pool.getConnection(function(err, connection) {
+        this.pool.getConnection(function(err, connection) {
             if (err) {
                 callback(err);
             } else {
                 connection.query(`INSERT INTO mensajes(idOrigen, idDestino, mensaje,hora,leido)
-                VALUES(?,?,?,?,?)`,[usuarioOrigen.id],[usuarioDestino.id],[mensaje],[new Date],[1],function (err,resultado){
+                VALUES(?,?,?,?,?)`,[usuarioOrigen.id,usuarioDestino.id,mensaje,new Date("December 17, 1995 03:24:00"),1],function (err,resultado){
                     connection.release();
                     if(err)
                         callback(err);
@@ -51,11 +52,11 @@ class dao{
     }
 
     bandejaEntrada(usuario,callback){
-        pool.getConnection(function(err, connection) {
+        this.pool.getConnection(function(err, connection) {
             if (err) {
                 callback(err);
             } else {
-                connection.query(`SELECT mensaje FROM mensajes WHERE idDestino = ? AND leido = 0`,
+                connection.query(`SELECT mensaje FROM mensajes WHERE idDestino = ? AND leido = 1`,
                 [usuario.id] ,function (err,resultado){
                     connection.release();
                     if(err)
@@ -68,12 +69,12 @@ class dao{
     }
 
     buscarUsuario(str, callback){
-        pool.getConnection(function(err, connection) {
+        this.pool.getConnection(function(err, connection) {
             if (err) {
                 callback(err);
             } else {
                 var cadena =  '%'+str+'%';
-                connection.query(`SELECT * FROM usuario WHERE nombre LIKE ?`,
+                connection.query("SELECT * FROM usuarios WHERE nombre LIKE ?",
                 [cadena] ,function (err,resultado){
                     connection.release();
                     if(err)
@@ -84,9 +85,17 @@ class dao{
             }
         });
     }
-    hola(){
-        console.log("hola");
+    terminarConexion(callback){
+        this.pool.end(function (err) {
+            if(err)
+                callback(err);
+            else
+                callback(null);
+        });
+        
+        
     }
+
 }
 
 module.exports = dao;

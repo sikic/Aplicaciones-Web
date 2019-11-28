@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding: 0;
+    text-transform: lowercase;
+}
+.letras{
+    display: none;
+}
+.formulario{
+    display: none;
+}
+
+.eliminar{
+    display: none;
+}
+
+.marcar{
+    display: none;
+}
+
+.letraytarea{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tarea{
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.terminada{
+    text-decoration: line-through;
+    margin-left: 10%;
+}
+.etiquetas{
+    display: flex;
+    justify-content: space-between;
+}
+
+
